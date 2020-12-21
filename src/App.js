@@ -9,7 +9,7 @@ function App() {
   const [y, setY] = useState(10);
   const [blur, setBlur] = useState(10);
   const [spread, setSpread] = useState(10);
-  const [shadowColor, setShadowColor] = useState("#0000ff");
+  const [shadowColor, setShadowColor] = useState("#000000");
   return (
     <div className="App">
       <Header />
