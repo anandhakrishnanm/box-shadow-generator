@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Output from "./components/Output/Output";
+import Controls from "./components/Controls/Controls";
 
 function App() {
+  const [x, setX] = useState(10);
+  const [y, setY] = useState(10);
+  const [blur, setBlur] = useState(10);
+  const [spread, setSpread] = useState(10);
+  const [shadowColor, setShadowColor] = useState("#0000ff");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="box-shadow-generator">
+        <Controls
+          x={x}
+          setX={setX}
+          y={y}
+          setY={setY}
+          blur={blur}
+          setBlur={setBlur}
+          spread={spread}
+          setSpread={setSpread}
+          shadowColor={shadowColor}
+          setShadowColor={setShadowColor}
+        />
+        <Output
+          x={x}
+          y={y}
+          blur={blur}
+          spread={spread}
+          shadowColor={shadowColor}
+        />
+      </div>
     </div>
   );
 }
