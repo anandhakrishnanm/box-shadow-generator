@@ -10,6 +10,7 @@ function App() {
   const [blur, setBlur] = useState(10);
   const [spread, setSpread] = useState(10);
   const [shadowColor, setShadowColor] = useState("#000000");
+  const [isInset, setInset] = useState(false);
   return (
     <div className="App">
       <Header />
@@ -25,6 +26,8 @@ function App() {
           setSpread={setSpread}
           shadowColor={shadowColor}
           setShadowColor={setShadowColor}
+          isInset={isInset}
+          setInset={setInset}
         />
         <Output
           x={x}
@@ -32,6 +35,7 @@ function App() {
           blur={blur}
           spread={spread}
           shadowColor={shadowColor}
+          isInset={isInset}
         />
       </div>
     </div>
