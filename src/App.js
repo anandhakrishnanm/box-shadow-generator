@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Output from "./components/Output/Output";
 import Controls from "./components/Controls/Controls";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [x, setX] = useState(3);
@@ -10,8 +11,8 @@ function App() {
   const [spread, setSpread] = useState(6);
   const [shadowColor, setShadowColor] = useState("#cccccc");
   const [isInset, setInset] = useState(false);
-  const [radius, setRadius] = useState(0);
-  const [parentBg, setParentBg] = useState("#ffffff");
+  const [radius, setRadius] = useState(3);
+  const [parentBg, setParentBg] = useState("#f7f7f7");
   const [childBg, setChildBg] = useState("#ffffff");
   return (
     <div className="App">
@@ -49,6 +50,7 @@ function App() {
           parentBg={parentBg}
         />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -22,7 +22,7 @@ function Output({ x, y, blur, spread, shadowColor, isInset,radius,childBg,parent
         title: "Copied.",
         description: "Your message is copied to clipboard ",
         status: "success",
-        duration: 9000,
+        duration: 1500,
         isClosable: true,
       })
     }
@@ -32,7 +32,7 @@ function Output({ x, y, blur, spread, shadowColor, isInset,radius,childBg,parent
       <div
         className="output" style={outputStyle}>
         <p>
-          Make some changes
+  
         </p>
       </div>
     </div>
@@ -40,13 +40,13 @@ function Output({ x, y, blur, spread, shadowColor, isInset,radius,childBg,parent
       <div className="copyBtn">
         <Button colorScheme="blue" size="xs" onClick={copyToClipboard}>Copy</Button>
       </div>
-      <p className="code-text" id="outTxt">
-        boxShadow: {x}px {y}px {blur}px {spread}px {shadowColor} {isInset ? "inset" : ""};
+      <code className="code-text" id="outTxt">
+        boxShadow: {x}px {y}px {blur}px {spread}px {shadowColor} {isInset ? "inset":""};
         <br></br>
         borderRadius: {radius}px;
         <br></br>
         backgroundColor: {childBg};
-      </p>
+      </code>
     </div>
     
     </div>

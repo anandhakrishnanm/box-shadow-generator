@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  padding: 10px 10px 50px 10px;
 }
 .controls{
   width: 30rem;
@@ -28,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 .result{
   /* margin-top: 5rem; */
@@ -46,12 +48,30 @@
 .copyBtn{
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 10px;
 }
 .code{
   margin-top: 110px;
+  background:rgb(114, 112, 112,0.2);
+  padding: 15px;
+  border-radius: 10px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  padding: 20px;
+  border-top: 1px solid rgba(0,0,0,0.2);
 }
 @media screen and (max-width: 800px){
   .box-shadow-generator{
     flex-direction: column;
+  }
+  .result{
+    margin-top: 20px;
+  }
+  .code{
+    width: 26rem;
   }
 }
