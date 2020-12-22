@@ -50,3 +50,8 @@
 .code{
   margin-top: 110px;
 }
+@media screen and (max-width: 800px){
+  .box-shadow-generator{
+    flex-direction: column;
+  }
+}
