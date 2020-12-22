@@ -1,7 +1,7 @@
 import { Heading } from "@chakra-ui/react"
 function Header(){
     return(
-    <Heading className="main-heading" as="h2" size="2xl" isTruncated>
+    <Heading className="main-heading" as="h3" size="lg" isTruncated>
         Box Shadow Generator
     </Heading>
     

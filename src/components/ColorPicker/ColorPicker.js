@@ -12,12 +12,14 @@ function ColorPicker(props) {
           value={props.color}
           onChange={(e) => props.onChange(e.target.value)}
         ></input>
+        <div className="hex-value-box">
         <Input
           value={props.color}
           size="md"
           placeholder="#000000"
           onChange={(e) => props.onChange(e.target.value)}
         />
+        </div>
       </div>
     </div>
   );
