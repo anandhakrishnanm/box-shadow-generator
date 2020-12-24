@@ -3,7 +3,7 @@ import { useToast } from "@chakra-ui/react";
 function Output({ x, y, blur, spread, shadowColor, isInset,radius,childBg,parentBg }) {
   const toast = useToast()
    let outputStyle={
-        boxShadow: `${x}px ${y}px ${blur}px ${spread}px ${shadowColor} ${isInset ? "inset" : ""}`,
+        boxShadow: `${x-50}px ${y-50}px ${blur-50}px ${spread-50}px ${shadowColor} ${isInset ? "inset" : ""}`,
         borderRadius: `${radius}px`,
         backgroundColor: `${childBg}`
     }
@@ -41,7 +41,7 @@ function Output({ x, y, blur, spread, shadowColor, isInset,radius,childBg,parent
         <Button colorScheme="blue" size="xs" onClick={copyToClipboard}>Copy</Button>
       </div>
       <code className="code-text" id="outTxt">
-        boxShadow: {x}px {y}px {blur}px {spread}px {shadowColor} {isInset ? "inset":""};
+        boxShadow: {x-50}px {y-50}px {blur-50}px {spread-50}px {shadowColor} {isInset ? "inset":""};
         <br></br>
         borderRadius: {radius}px;
         <br></br>

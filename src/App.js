@@ -5,10 +5,10 @@ import Controls from "./components/Controls/Controls";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [x, setX] = useState(3);
-  const [y, setY] = useState(3);
-  const [blur, setBlur] = useState(5);
-  const [spread, setSpread] = useState(6);
+  const [x, setX] = useState(53);
+  const [y, setY] = useState(53);
+  const [blur, setBlur] = useState(55);
+  const [spread, setSpread] = useState(56);
   const [shadowColor, setShadowColor] = useState("#cccccc");
   const [isInset, setInset] = useState(false);
   const [radius, setRadius] = useState(3);
